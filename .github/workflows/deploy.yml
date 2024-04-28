@@ -23,7 +23,7 @@ jobs:
             mongodb:
                 image: mongo
                 ports:
-                    - 27017:8000 # internal port:runner port
+                    - 8000:27017 # internal port:runner port
                 env:
                     MONGO_INITDB_ROOT_USERNAME: root
                     MONGO_INITDB_ROOT_PASSWORD: example
